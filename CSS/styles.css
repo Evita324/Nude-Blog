@@ -1,21 +1,22 @@
 /* reset */
 
-*{
+* {
     padding: 0;
     margin: 0
 }
 
 /* zagolovoki */
-h1{
+h1 {
     text-align: center;
     font-family: monospace;
     font-family: 'Bebas Neue', cursive;
-    font-size: 125 px;
+    font-size: 125px;
     color: aliceblue;
 }
+
 /**/
 header {
-    background-image: linear-gradient(rgba(140,3,14, 0.3),rgba(0,0,0, 0.5)),url(../IMG/cover.jpg);
+    background-image: linear-gradient(rgba(140, 3, 14, 0.3), rgba(0, 0, 0, 0.5)), url(../IMG/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 55vh;
@@ -23,22 +24,22 @@ header {
     background-position: center;
 }
 
-h3{
+h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     padding-top: 10px;
 }
 
 /* ft zagolovka */
-#cover{
+#cover {
     display: block;
     height: 350px;
     width: 1000px;
     margin: 0 auto;
-    
+
 }
 
-nav{
+nav {
     padding-top: 25px;
     height: 50px;
     background: #40010D;
@@ -46,35 +47,38 @@ nav{
     padding-bottom: 30px;
 }
 
-.postimg{
+.postimg {
     height: 275px;
     width: 450px;
     display: block;
     margin: 0 auto;
-    
+
 }
 
-body{
+body {
     background-color: currentColor;
 }
 
-h3,p{
+h3,
+p {
     color: aliceblue;
 }
 
-ul{
+ul {
     text-align: center;
-/*    rashiriaet sam teg */
-     padding-bottom:    40px
+    /*    rashiriaet sam teg */
+    padding-bottom: 40px
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
-/*    rastojanie */
+    /*    rastojanie */
     padding-left: 70px;
-    
+
 }
+
 /*letter-spacing rastojanie mezdu bukvami*/
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
@@ -82,19 +86,20 @@ nav ul li a{
     letter-spacing: 2px
 }
 
-article{
+article {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
     padding-bottom: 20px;
 
-        
+
 }
 
 /* tekst v poste */
 
-article p,article a{
+article p,
+article a {
     font-family: 'Niramit', sans-serif;
     padding-top: 20px;
     margin-bottom: 10px;
@@ -104,7 +109,7 @@ article p,article a{
 
 /*knopki article*/
 
-article a{
+article a {
     text-decoration: none;
     color: aliceblue;
     font-family: 'Bebas Neue', cursive;
@@ -116,51 +121,97 @@ article a{
 }
 
 /* hover eto navodim kursor*/
-nav a:hover{
+nav a:hover {
     color: #8C030E;
-    
+
 }
 
-article a:hover{
+article a:hover {
     color: #0D0D0D;
 }
 
 /*footer*/
 
-footer{
+footer {
     text-align: center;
     margin-bottom: 30px;
     font-family: 'Bebas Neue';
-    
-    
+
+
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: aliceblue;
-    
+
 }
 
-footer a:hover{
+footer a:hover {
     color: #8C030E;
 }
 
-i{
+i {
     font-size: 45px;
-        
+
 }
 
-hr{
+hr {
     border: solid 1px #8C030E;
     background: #8C030E;
     margin-top: 10px;
 }
 
-/*Media Queries */
 
-@media screen and (max-device-width: 668px)
-    and ( min-device-width: 375px) and (orientation: portrait ){
-        h1{
-            font-size: 125px;
-        }
+/*Media Queries */
+/*Mobilka*/
+@media screen and (max-device-width: 800px) and (min-device-width: 319px) and (orientation: portrait) {
+    h1 {
+        font-size: 100px;
+    }
+
+    header {
+        height: 500px;
+        background-attachment: local;
+    }
+
+    nav {
+        width: 20%;
+        position: fixed;
+        background: transparent;
+        margin-top: -45%;
+        margin-left: -7.5%;
+    }
+
+    ul li {
+        margin-top: 30px;
+    }
+
+    .top-article {
+        margin-top: 30px;
+    }
+
+    .postimg {
+        height: 475px;
+        width: 650px;
+        display: block;
+        margin: 0 auto;
+
+    }
+}
+
+
+/*Tablets*/
+@media screen and (max-device-width: 1025px) and (min-device-width: 800px) and (orientation: portrait){
+    header {
+        height: 500px;
+        background-attachment: local;
+    }
+    nav{
+        overflow: hidden;
+    }
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 }
